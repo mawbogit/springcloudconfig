@@ -1,0 +1,19 @@
+server:
+  port: 8765
+
+spring:
+# 服务名
+  application:
+    name: order
+# MySQL配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: Mawbo?692
+    url: jdbc:mysql://www.mawbo.cn/springcloud_shell?characterEncoding=utf-8&useSSL=false
+
+# 注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
